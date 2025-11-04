@@ -1,0 +1,46 @@
+{
+  "name": "cool-design-system",
+  "version": "0.1.0",
+  "description": "Fintual design system components for React and React Native",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrinrj/cool-design-system.git"
+  },
+  "author": "Rodrigo Naranjo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodrinrj/cool-design-system/issues"
+  },
+  "homepage": "https://github.com/rodrinrj/cool-design-system#readme",
+  "scripts": {
+    "build": "tsup ./src/index.ts --format cjs,esm --dts",
+    "lint": "tsc"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-native": "^0.82.1"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.7",
+    "@types/react": "^19.2.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "react-native": "./dist/index.native.js"
+}
